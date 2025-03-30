@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B Alwin Felix - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background: url('6041694.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            width: 40%;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 1.5s ease-in-out;
+            min-height: 120vh;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+            border: 3px solid white;
+            animation: bounce 2s infinite;
+        }
+        h1, h2, h3 {
+            color: white;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        .info-box {
+            background: linear-gradient(135deg, #00ff00, #008000);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5);
+        }
+        .info-box:hover {
+            transform: scale(1.05);
+        }
+        .info-box p, .info-box ul li {
+            color: black;
+            font-weight: bold;
+        }
+        .buttons {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .buttons button, .download-btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(135deg, #00ff00, #008000);
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5);
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .buttons button:hover, .download-btn:hover {
+            background: linear-gradient(135deg, #008000, #00ff00);
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(0, 255, 0, 0.7);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="passport photo.jpg" alt="B Alwin Felix">
+        <h1>B Alwin Felix</h1>
+        <h2>Peri College of Arts and Science</h2>
+        
+        <div class="buttons">
+            <button onclick="scrollToSection('career')">Career Objective</button>
+            <button onclick="scrollToSection('education')">Education</button>
+            <button onclick="scrollToSection('skills')">Skills</button>
+            <button onclick="scrollToSection('contact')">Contact</button>
+        </div>
+
+        <div id="career" class="info-box">
+            <h3>Career Objective</h3>
+            <p>Aspiring cybersecurity specialist and software developer with a strong foundation in C++, object-oriented programming, and ethical hacking. Passionate about developing secure applications, analyzing vulnerabilities, and creating innovative solutions.</p>
+        </div>
+        <div id="education" class="info-box">
+            <h3>Education</h3>
+            <p><strong>Degree:</strong> 2-year BCA</p>
+            <p><strong>Institution:</strong> Peri College of Arts and Science, Chennai Mannivakkam</p>
+            <p><strong>Years:</strong> 2023-2026</p>
+            <p><strong>GPA:</strong> 3.8/4.0</p>
+        </div>
+        <div id="skills" class="info-box">
+            <h3>Skills</h3>
+            <ul>
+                <li>C Language (Basic)</li>
+                <li>C++ (Basic)</li>
+                <li>Java (Basic)</li>
+                <li>Python (Basic)</li>
+                <li>HTML & CSS (Basic)</li>
+                <li>SQL Server Management (Basic)</li>
+                <li>MongoDB (Basic)</li>
+                <li>Good Communication Skills</li>
+            </ul>
+        </div>
+        
+        <div id="contact" class="info-box">
+            <h3>Contact</h3>
+            <p><strong>Email:</strong> alwinfelix@example.com</p>
+            <p><strong>Phone:</strong> +91 9876543210</p>
+            <p><strong>Location:</strong> Chennai, India</p>
+        </div>
+
+        <div class="download-section">
+            <h3>Download Resume</h3>
+            <a href="file.pdf" download class="download-btn">Download PDF</a>
+        </div>
+    </div>
+    
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
