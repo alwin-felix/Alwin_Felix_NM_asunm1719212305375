@@ -16,19 +16,20 @@
             overflow-x: hidden;
         }
         .container {
-            width: 40%;
+            width: 90%;
+            max-width: 600px;
             margin: auto;
             background: rgba(0, 0, 0, 0.8);
-            padding: 50px;
+            padding: 30px;
             border-radius: 15px;
             box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
             backdrop-filter: blur(10px);
             animation: fadeIn 1.5s ease-in-out;
-            min-height: 120vh;
+            min-height: 100vh;
         }
         img {
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             margin-top: 20px;
             border: 3px solid white;
@@ -36,10 +37,6 @@
         }
         h1, h2, h3 {
             color: white;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
         }
         .info-box {
             background: linear-gradient(135deg, #00ff00, #008000);
@@ -59,16 +56,17 @@
         .buttons {
             margin: 20px 0;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            gap: 15px;
+            gap: 10px;
         }
         .buttons button, .download-btn {
-            padding: 12px 25px;
+            padding: 10px 20px;
             border: none;
-            border-radius: 25px;
+            border-radius: 20px;
             background: linear-gradient(135deg, #00ff00, #008000);
             color: black;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: bold;
             cursor: pointer;
             transition: 0.3s;
@@ -107,7 +105,7 @@
 
         <div id="career" class="info-box">
             <h3>Career Objective</h3>
-            <p>Aspiring cybersecurity specialist and software developer with a strong foundation in C++, object-oriented programming, and ethical hacking. Passionate about developing secure applications, analyzing vulnerabilities, and creating innovative solutions.</p>
+            <p>Aspiring cybersecurity specialist and software developer with a strong foundation in C++, object-oriented programming, and ethical hacking.</p>
         </div>
         <div id="education" class="info-box">
             <h3>Education</h3>
@@ -133,7 +131,7 @@
             <h3>Contact</h3>
             <p><strong>Email:</strong> babualwin28@gmail.com</p>
             <p><strong>Phone:</strong> +91 9150998037</p>
-            <p><strong>Location:</strong> Chennai Tambaram East</p>
+            <p><strong>Location:</strong> Chennai, Tambaram East</p>
         </div>
 
         <div class="download-section">
